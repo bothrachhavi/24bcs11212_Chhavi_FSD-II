@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .container {
+    @apply w-full flex flex-col justify-center items-center;
+  }
+
+  .box {
+    @apply flex flex-col gap-4;
+  }
+
+  .heading {
+    @apply text-3xl font-bold underline text-center;
+  }
+
+  .btn {
+    @apply border-3 px-8 font-bold text-white p-2 rounded-md cursor-pointer;
+  }
+
+  .card {
+    @apply border-2 w-full border-gray-300 rounded-md p-2;
+  }
+}
